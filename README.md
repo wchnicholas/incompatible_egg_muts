@@ -19,7 +19,7 @@ The sequence analysis is divided into two parts. [Part I](https://github.com/wch
     - Output file: 
       - [./table/mut\_freq\_egg\_filtered.tsv](./table/mut_freq_egg_filtered.tsv)
       - [./table/mut\_count\_year\_egg.tsv](./table/mut_count_year_egg.tsv)
-3. [./script/egg\_mut\_pair\_freq.py](./script/egg_mut_pair_freq.py): Compute the co-occurrence frequency of egg-adaptive mutations
+3. [./script/egg\_mut\_pair\_freq.py](./script/egg_mut_pair_freq.py): Compute the co-occurrence frequencies of egg-adaptive mutations
     - Input file: 
       - [./table/mut\_count\_year\_egg.tsv](./table/mut_count_year_egg.tsv)
       - [./Fasta/HumanH3N2\_All\_2018.aln](./Fasta/HumanH3N2_All_2018.aln)
@@ -28,7 +28,7 @@ The sequence analysis is divided into two parts. [Part I](https://github.com/wch
       - [./table/mut\_single\_freq.tsv](./table/mut_single_freq.tsv)
 
 ### CO-OCCURRENCE ANALYSIS: PLOTTING
-1. [./script/plot\_mut\_freq\_egg.R](./script/plot_mut_freq_egg.R): Plot the occurrence frequency of egg-adaptive mutations observed in different year
+1. [./script/plot\_mut\_freq\_egg.R](./script/plot_mut_freq_egg.R): Plot the occurrence frequencies of egg-adaptive mutations observed in different year
     - Input file: 
       - [./table/mut\_freq\_egg\_filtered.tsv](./table/mut_freq_egg_filtered.tsv)
       - [./table/seq\_count.tsv](./table/seq_count.tsv)
@@ -43,5 +43,6 @@ The sequence analysis is divided into two parts. [Part I](https://github.com/wch
 
 ## PART II: DEEP SEQUENCING ANALYSIS OF EGG MUTATIONS
 ### DEEP SEQUENCING: INPUT FILE
+
 
 ### DEEP SEQUENCING: ANALYSIS PIPELINE
