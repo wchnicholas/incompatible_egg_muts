@@ -1,7 +1,7 @@
-The sequence analysis is divided into two parts. [Part I]() describes the analysis for co-occuring egg-adaptive mutations in sequence database. [Part II]() describes the analysis for deep sequencing of egg-passaging experiments.
+The sequence analysis is divided into two parts. [Part I](https://github.com/wchnicholas/incompatible_egg_muts#part-i-co-occurrence-analysis-of-egg-mutations) describes the analysis for co-occuring egg-adaptive mutations in sequence database. [Part II](https://github.com/wchnicholas/incompatible_egg_muts#part-ii-deep-sequencing-analysis-of-egg-mutations) describes the analysis for deep sequencing of egg-passaging experiments.
 ## PART I: CO-OCCURRENCE ANALYSIS OF EGG MUTATIONS
 ### CO-OCCURRENCE ANALYSIS: INPUT FILE
-[./Fasta/HumanH3N2\_All\_2018.aln](./Fasta/HumanH3N2_All_2018.aln): Human H3N2 HA sequences downloaded from [GISAID](http://platform.gisaid.org)
+[./Fasta/HumanH3N2\_All\_2018.aln](./Fasta/HumanH3N2_All_2018.aln): Human H3N2 HA sequences downloaded from [GISAID](https://www.gisaid.org/)
 
 ### CO-OCCURRENCE ANALYSIS: ANALYSIS PIPELINE
 1. [./script/Parse\_GISAID\_aln.py](./script/Parse_GISAID_aln.py): Identify egg-adaptive mutations and analyze their co-occurrence frequencies
