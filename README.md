@@ -55,5 +55,5 @@ The sequence analysis is divided into two parts. [Part I](https://github.com/wch
 
 ### DEEP SEQUENCING: PLOTTING
 1. [./script/plot\_deep\_seq\_mut\_freq.R](script/plot_deep_seq_mut_freq.R): Plot the mutation frequency in different passages
-  - Inupt file: [./result/mut\_freq.tsv](result/mut_freq.tsv)
-  - Output file: graph/Freq\_\*
+    - Inupt file: [./result/mut\_freq.tsv](result/mut_freq.tsv)
+    - Output file: graph/Freq\_\*
