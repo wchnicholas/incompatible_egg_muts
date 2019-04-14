@@ -1,7 +1,7 @@
 The sequence analysis is divided into two parts. [Part I](https://github.com/wchnicholas/incompatible_egg_muts#part-i-co-occurrence-analysis-of-egg-mutations) describes the analysis for co-occuring egg-adaptive mutations in sequence database. [Part II](https://github.com/wchnicholas/incompatible_egg_muts#part-ii-deep-sequencing-analysis-of-egg-mutations) describes the analysis for deep sequencing of egg-passaging experiments.
 ## PART I: CO-OCCURRENCE ANALYSIS OF EGG MUTATIONS
 ### CO-OCCURRENCE ANALYSIS: INPUT FILE
-[./Fasta/HumanH3N2\_All\_2018.aln](./Fasta/HumanH3N2_All_2018.aln): Human H3N2 HA sequences downloaded from [GISAID](https://www.gisaid.org/)
+* [./Fasta/HumanH3N2\_All\_2018.aln](./Fasta/HumanH3N2_All_2018.aln): Human H3N2 HA sequences downloaded from [GISAID](https://www.gisaid.org/)
 
 ### CO-OCCURRENCE ANALYSIS: ANALYSIS PIPELINE
 1. [./script/Parse\_GISAID\_aln.py](./script/Parse_GISAID_aln.py): Identify egg-adaptive mutations and analyze their co-occurrence frequencies
@@ -43,6 +43,17 @@ The sequence analysis is divided into two parts. [Part I](https://github.com/wch
 
 ## PART II: DEEP SEQUENCING ANALYSIS OF EGG MUTATIONS
 ### DEEP SEQUENCING: INPUT FILE
-
+* All raw sequencing reads, which can be downloaded from NIH SRA database [PRJNA532726](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA532726), should be placed in fastq/ folder. The filename for read 1 should match those described in [./data/Sample\_name.tsv](./data/Sample_name.tsv). The filename for read 2 should be the same as read 1 except "R1" is replaced by "R2".
 
 ### DEEP SEQUENCING: ANALYSIS PIPELINE
+1. [./script/Bris07\_Egg\_read\_to\_count.py](./script/Bris07_Egg_read_to_count.py): Convert raw reads to mutation count
+    - Input file: Raw sequencing reads in fastq/ folder
+    - Output files: result/\*\_count.tsv
+2. [./script/Bris07\_Egg\_count\_to\_freq.py](./script/Bris07_Egg_count_to_freq.py): Convert mutation count to mutation frequency
+    - Input file: result/\*\_count.tsv
+    - Output files: [./result/mut\_freq.tsv](result/mut_freq.tsv)
+
+### DEEP SEQUENCING: PLOTTING
+1. [./script/plot\_deep\_seq\_mut\_freq.R](script/plot_deep_seq_mut_freq.R): Plot the mutation frequency in different passages
+  - Inupt file: [./result/mut\_freq.tsv](result/mut_freq.tsv)
+  - Output file: graph/Freq\_\*
