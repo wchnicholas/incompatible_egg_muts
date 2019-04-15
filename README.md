@@ -4,7 +4,7 @@ The sequence analysis is divided into two parts. [Part I](https://github.com/wch
 * [./Fasta/HumanH3N2\_All\_2018.aln](./Fasta/HumanH3N2_All_2018.aln): Human H3N2 HA sequences downloaded from [GISAID](https://www.gisaid.org/)
 
 ### CO-OCCURRENCE ANALYSIS: ANALYSIS PIPELINE
-1. [./script/Parse\_GISAID\_aln.py](./script/Parse_GISAID_aln.py): Identify egg-adaptive mutations and analyze their co-occurrence frequencies
+1. [./script/Parse\_GISAID\_aln.py](./script/Parse_GISAID_aln.py): Identify egg-adaptive mutations, written by [Douglas Wu](https://wckdouglas.github.io/)
     - Input file: [./Fasta/HumanH3N2\_All\_2018.aln](./Fasta/HumanH3N2_All_2018.aln)
     - Output file:
       - [./table/base\_count\_table.tsv](./table/base_count_table.tsv)
