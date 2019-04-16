@@ -273,14 +273,7 @@ def wrapper(alnfilename):
     write_dict(RawPosToH3number_dict, 'table/converter.pkl')
     years = set(Egg_dict.keys()).intersection(set(Ori_dict.keys()))
     parse_dictionaries(Egg_dict, Ori_dict, years, tablename, RawPosToH3number_dict)
-    # make mutation hotspot
     hotspot_positions_df = get_mutation_hotspot(tablename, cutoff=0, converter=RawPosToH3number_dict)
-    #tablename = 'table/mutation_hotspot_table.tsv'
-    #hotspot_positions_df.to_csv(tablename, sep='\t', index=False)
-    #hotspot_positions_df = pd.read_table(tablename)
-    #pair_wise_mutation(hotspot_positions_df, Egg_dict, RawPosToH3number_dict)
-    #doublemut_file = 'table/double_mutants.tsv'
-    #compile_to_mut_freq_table(doublemut_file)
 
 def main():
   wrapper('Fasta/HumanH3N2_All_2018.aln')
