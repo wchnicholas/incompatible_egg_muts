@@ -1,7 +1,7 @@
 This README describes the scripts used for the analyses in:   
 [Preventing an antigenically disruptive mutation in egg-based H3N2 seasonal influenza vaccines by mutational incompatibility](https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(19)30216-1)
 
-The sequence analysis is divided into two parts. [Part I](https://github.com/wchnicholas/incompatible_egg_muts#part-i-co-occurrence-analysis-of-egg-mutations) describes the analysis for co-occuring egg-adaptive mutations in sequence database. [Part II](https://github.com/wchnicholas/incompatible_egg_muts#part-ii-deep-sequencing-analysis-of-egg-mutations) describes the analysis for deep sequencing of egg-passaging experiments.
+The analysis is divided into two parts. [Part I](https://github.com/wchnicholas/incompatible_egg_muts#part-i-co-occurrence-analysis-of-egg-mutations) describes the analysis for co-occuring egg-adaptive mutations in sequence database. [Part II](https://github.com/wchnicholas/incompatible_egg_muts#part-ii-deep-sequencing-analysis-of-egg-mutations) describes the analysis for deep sequencing of egg-passaging experiments.
 ## PART I: CO-OCCURRENCE ANALYSIS OF EGG MUTATIONS
 ### CO-OCCURRENCE ANALYSIS: INPUT FILE
 * [./Fasta/HumanH3N2\_All\_2018.aln](./Fasta/HumanH3N2_All_2018.aln): Human H3N2 HA sequences downloaded from [GISAID](https://www.gisaid.org/)
